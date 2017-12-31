@@ -1,0 +1,44 @@
+{% load staticfiles %}
+
+<html> 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-grid.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-reboot.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.bundle.minjs' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.js' %}">
+
+
+<head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-grid.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap-reboot.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.bundle.minjs' %}">
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/js/bootstrap.js' %}">
+
+</head>
+<body> 
+      Hello World!!!<p>Today is {{obj}} </p> 
+      {{user}}
+      <table border = "1" bgcolor = "yellow" width = "100%">
+	     {% for key, value in dic.items %} 
+                  
+         <tr>		    
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+         </tr>
+         {% endfor %} 
+
+     </table>
+</body>
+</html>
